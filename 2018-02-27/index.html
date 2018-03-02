@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="js/jquery-3.3.1.js"></script>
+	<title>Homework Prusov A. 2018-02-27</title>
+</head>
+<body>
+	<ol><h1>Условные и логические операторы</h1>
+		<li>Создайте три переменные с любыми числовыми значениями. Используя вложенные условные операторы if, найдите минимальное число и отобразите на экране имя переменной и ее значение. Создайте блок-схему, описывающую алгоритм работы программы.</li>
+		<li>В переменную x записывается число, введенное пользователем в диалоговое окно. Проверить и вывести на экран, x – отрицательное число, положительное или ноль.</li>
+		<li>У вас и у вашего друга в кармане столько денег, сколько было указано в окнах prompt. В зависимости от общей суммы ваших сбережений вы можете полететь на Майорку или выпить пива. С помощью условного оператора определите ваши возможности и отобразите на экране в alert.</li>
+		<li>В переменную age запишите возраст человека. Если значение больше или равно 20 и меньше 27, в alert выводится “Выслать повестку”.</li>
+		<li>Чтобы добраться домой, вас устраивают маршрутки номер 7, 225 и 255. Какая маршрутка приехала – определяется в prompt. Если ваша, то вы едете домой, в противном случае – ожидаете.</li>
+		<li>В переменную day записан текущий день недели. Если это не суббота и не воскресенье, выведите в alert сентенцию о необходимости идти на работу.</li>
+		<li>Напишите калькулятор обмена валюты USD-UAH. Из первого prompt читается тип операции (регистр символов не имеет значения), из второго - сумма, подлежащая конвертации. Используя switch, рассчитайте результат конвертации и выведите его в alert.</li>
+		<li>Создайте две переменные: greeting и lang. Переменная greeting – пустая строка. Переменная lang может принимать три значения: 'ru', 'en', 'de' (например, из prompt). Если она имеет значение 'ru', то в переменную greeting запишите приветствие на русском языке, если имеет значение 'en' – то на английском, если 'de' – на немецком. Выведите на экран приветствие в зависимости от значения переменной lang. Решите задачу через if-else и через switch-case.</li>
+		<li>В переменной month хранится текущий месяц (new Date()). Определите в какую пору года попадает этот месяц (зима, лето, весна, осень).</li>
+		<li>Переменная lang может принимать два значения: 'ru' и 'en'. Переменная day принимает значение от 0 до 6-ти. Если lang имеет значение 'ru', то в переменную result запишите название дня недели на русском языке в соответствии со значением переменной day (0 – воскресенье, 1 – понедельник, 2 – вторник и т.д.). Если же lang имеет значение 'en' – то аналогично, но день недели будет на английском.</li>
+		<li>Поиск элементов DOM (объектной структуры документа) с использованием библиотеки jQuery <br> Используя поиск по селекторам из раздела “Селекторы” справочника и jQuery-функцию css, задайте стили элементам таблицы в блоке #content. Редактировать HTML нельзя, CSS не нужен. Последовательность команд:
+			<ol>
+			 	<li>Таблица расположена посредине страницы, расстояния между ее ячейками нет</li>
+			 	<li>Все ячейки имеют ширину-высоту 10px, цвет фона #eee, границу 1px solid #000</li>
+			 	<li>Фон в ячейках первых шести строк –#106B63</li>
+			 	<li>Фон в ячейках строк 7-9 –#E7C610</li>
+			 	<li>Фон в ячейках строк 10-12 – #C64A08</li>
+			 	<li>Фон в ячейках строк 13-15 –#B43100</li>
+			 	<li>Фон в ячейках строк 13-15 –#B43100</li>
+			 	<li>У некоторых ячеек есть класс none, задайте на jQuery стиль для этого класса:</li>
+			 </ol> 
+		</li>
+	</ol>
+
+	<div id="content">
+	<table>
+		<tr>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+		<tr>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+			<td class="none"></td>
+		</tr>
+
+	</table>
+</div>
+
+<table border="1">
+	<tr>
+		<td>Контрольная</td>
+		<td>таблица</td>
+		<td>без</td>
+		<td>стилей</td>
+	</tr>
+</table>
+	<script src="js/index.js"></script>
+</body>
+</html>	
