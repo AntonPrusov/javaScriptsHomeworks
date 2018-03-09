@@ -149,4 +149,11 @@ alert('Вы ввели ' + counter + ' чисел, их сумма равна: '
 .#########.
 ###########
  ET (Estimated Time) - 40 min
- AT (Actual Time) - min*/
+ AT (Actual Time) ~ 240 min*/
+
+var rowQuantity = +prompt('Введите высоту ёлочки', '6');
+for (var x = 1, o = rowQuantity - x, elka = ''; o >= 0 && x <= rowQuantity * 2 - 1; o--, x += 2) {
+	elka = elka + '.'.repeat(o) + '#'.repeat(x) + '.'.repeat(o) + '\n';
+}
+console.log(elka);
+alert(elka);
