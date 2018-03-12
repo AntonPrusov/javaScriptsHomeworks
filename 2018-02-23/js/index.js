@@ -26,7 +26,7 @@ var amount = x + y;
 var difference = x - y;
 var multiplication = x * y;
 var division = x / y;
-if(isNaN(amount) == true) {
+if(isNaN(amount)) {
 	alert("Вы ввели не число/числа");
 }
 else {
@@ -36,7 +36,7 @@ alert("Произведение чисел : " + multiplication + ", Частн�
 //  пользователем, нечётным. Результат отобразите в alert.
 
 var number = +prompt("Задание 4: \nВведите число");
-if (isNaN(number) == true) {
+if (isNaN(number)) {
 	alert("Вы ввели не число");
 }
 else {
@@ -51,7 +51,7 @@ else {
 /*5.Напишите программу, которая проверяет, является ли значение, введенное пользователем, числом.*/
 
 var userData = prompt("Задание 5: \nВведите что-нибудь");
-if (isNaN(userData) == true) {
+if (isNaN(userData)) {
 	alert("Вы ввели не число");
 }
 else {
@@ -97,11 +97,11 @@ var random = Math.random();
 random = random * 100;
 random = Math.round(random)
 var secondNumber = +prompt("Задание 9: \nВведите число от 1 до 100", "50");
-if (isNaN(secondNumber) == true) {
+if (isNaN(secondNumber)) {
 	alert("Вы ввели не число");
 }
 else {
-	if (( secondNumber > random) == true) {
+	if (secondNumber > random) {
 		alert("Ваше число больше случайного, Ваше число: " + secondNumber + ", случайное число: " + random);
 	}
 	else {

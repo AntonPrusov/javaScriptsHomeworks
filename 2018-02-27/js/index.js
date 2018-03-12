@@ -7,7 +7,7 @@
 var firstNumber = +prompt('Задание 1: \nВведите три разных числа: \nПервое число (переменная firstNumber)', '0');
 var secondNumber = +prompt('Второе число (переменная secondNumber)', '5');
 var thirdNumber = +prompt('Третье число (переменная thirdNumber)', '-5');
-if(isNaN(firstNumber) == true || isNaN(secondNumber) == true || isNaN(thirdNumber) == true) { alert('Вы ввели не число/числа');}
+if(isNaN(firstNumber) || isNaN(secondNumber) || isNaN(thirdNumber)) { alert('Вы ввели не число/числа');}
 	else {
 		if (firstNumber == secondNumber || firstNumber == thirdNumber || secondNumber == thirdNumber) {
 			alert('Не все числа были разными')
@@ -57,7 +57,7 @@ if (firstNumber < secondNumber) {
  AT (Actual Time) - 13 min*/
 
 var x = +prompt('Задание 2: \nВведите число', '0');
-if(isNaN(x) == true) { alert('Вы ввели не число');}
+if(isNaN(x)) { alert('Вы ввели не число');}
 else {
 	if (x < 0) { alert('Вы ввели отрицательное число');}
 	if (x > 0) { alert('Вы ввели положительное число');}
@@ -95,7 +95,7 @@ if(sumMoney < 4 )
  AT (Actual Time) - 6 min*/
 
 var age = +prompt('Задание 4: \nВозраст мужчины', '25');
-if(isNaN(age) == true) { alert('Возраст измеряется в числах!');}
+if(isNaN(age)) { alert('Возраст измеряется в числах!');}
 else {
 	if (age >= 20 && age < 27) {
 		alert('Передайте ему повестку!');
@@ -111,7 +111,7 @@ else {
  AT (Actual Time) - 12 min*/
 
 var busNumber = +prompt('Задание 5: \nВведите номер маршрутки', '225');
-if(isNaN(busNumber) == true) { alert('Введите номер маршрута числом');}
+if(isNaN(busNumber)) { alert('Введите номер маршрута числом');}
 else {
 	if ( busNumber == 7 || busNumber == 225 || busNumber == 255 ) {
 		alert('Вам подходит этот маршрут. Скорее садитесь пока не уехала!');
@@ -151,7 +151,7 @@ if(operation !== 'КУПИТЬ' && operation !== 'ПРОДАТЬ') {
 }
 else {
 	var summ = prompt('Введите сумму $ для обмена', '100');
-	if(isNaN(summ) == true) { alert('Введите сумму числом');}
+	if(isNaN(summ)) { alert('Введите сумму числом');}
 	else {
 		switch (operation) {
 			case 'КУПИТЬ': price = summ * 26.8; break;
@@ -210,7 +210,7 @@ else {
  AT (Actual Time) - 28min*/
 
 var month = new Date(prompt('Задание 9: \nВведите дату в формате ГГГГ-ММ-ДД', '1988-04-02')).getMonth(), season;
-if(isNaN(month) == true) { alert('Введите реальную дату в указанном формате');}
+if(isNaN(month)) { alert('Введите реальную дату в указанном формате');}
 else { 
 	switch (month) {
 		case 11 || 0 || 1 : season = 'Зима'; break;
