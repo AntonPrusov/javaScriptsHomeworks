@@ -23,7 +23,7 @@ alert('Задание 2: \n' + j);
  AT (Actual Time) - 10 min*/
 
 for (i = 1; i <=10; i++) {
-	if (i % 2 == false) {
+	if (i % 2 == 0) {
 	alert('Задание 3:\n' + (i * i));
 	}
 }
@@ -95,16 +95,16 @@ for (string = 1, picture = ''; string <= stringQuantity; string ++ ) {
 		if(string % 2 && row % 2) {
 			picture = picture + '.';
 			}
-		if(string % 2 == false && row % 2) {
+		else if(string % 2 == 0 && row % 2) {
 			picture = picture + '#';
 			}
-		if(string % 2 && row % 2 == false) {
+		else if(string % 2 && row % 2 == 0) {
 			picture = picture + '#';
 			}
-		if(string % 2 == false && row % 2 == false) {
+		else if(string % 2 == 0 && row % 2 == 0) {
 			picture = picture + '.';
 			}
-		if(row == rowQuantity) {
+		else if(row == rowQuantity) {
 			picture = picture + '\n';
 			}
 		}
@@ -116,14 +116,17 @@ alert(picture);
  ET (Estimated Time) - 20 min
  AT (Actual Time) - 65 min*/
 
-/*var fibStopCounter = +prompt('Задание 9: \nСколько чисел Вы хотите увидеть в ряду Фибоначчи?', '10');
-var fibonacci = [0, 1];
-for(fibCounter = 2; fibCounter < fibStopCounter; fibonacci[fibCounter] = fibonacci[fibCounter-1] + fibonacci[fibCounter-2], fibCounter++) {}
-alert(fibonacci);*/ /*Массивы еще не учили*/
-
-var fibStopCounter = +prompt('Задание 9: \nСколько чисел Вы хотите увидеть в ряду Фибоначчи?', '10');
-var a = 0, b = 1, fibonacci = a + ' ' + b + ' ', c;
-for (var fibCounter = 3; fibCounter <= fibStopCounter; c = a + b, a = b, b = c, fibonacci += c + ' ', fibCounter++) {}
+var fibStopCounter = +prompt('Задание 9: \nСколько чисел Вы хотите увидеть в ряду Фибоначчи?', '10'); 
+var a = 0; 
+var b = 1; 
+var c = 0; 
+var fibonacci = a + ' ' + b; 
+for (var fibCounter = 2; fibCounter <= fibStopCounter; fibCounter++) {
+	c = a + b;
+	a = b;
+	b = c;
+	fibonacci = fibonacci + ' ' + c;
+} 
 alert(fibonacci);
 
 /*10. Запустите цикл, в котором пользователю предлагается вводить число с клавиатуры, 
