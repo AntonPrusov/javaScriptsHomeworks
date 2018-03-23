@@ -92,7 +92,12 @@ var usersUnder18 = users.filter(under18);
 console.log(usersUnder18);
 
 users.forEach(function(item) {
-	item.fullName = item.firstname + ' ' + item.midlename + ' ' + item.lastname;
+	if (item.midlename) {
+		item.fullName = item.firstname + ' ' + item.midlename + ' ' + item.lastname;
+	}
+	else {
+		item.fullName = item.firstname + ' ' + item.lastname;
+	}
 });
 console.log(users);
 

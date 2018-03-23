@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="js/jquery-3.3.1.js"></script>
+	<title>Homework Prusov A. 2018-03-13</title>
+</head>
+<body> 
+<ol>
+	<h1>Методы объектов и контекст исполнения функции</h1>
+	<li>Создайте объект calculator с методами:
+		<ol>
+			<li>read() запрашивает prompt для двух значений и сохраняет их как свойства объекта x, y</li>
+			<li>sum() возвращает сумму этих двух значений</li>
+			<li>multi() возвращает произведение этих двух значений</li>
+			<li>diff() возвращает разницу</li>
+			<li>div() возвращает частное</li><br>
+
+calculator.read(); <br>
+alert( calculator.sum() ); <br>
+alert( calculator.multi() );
+<br>
+		</ol>
+	</li>
+	<li>Создайте объект coffeeMachine со свойством message: ‘Your coffee is ready!’ и методом start(), при вызове которого – coffeeMachine.start() – через 3 секунды появляется окно с сообщением, записанным в свойстве объекта message.<br></li>
+	<li>Создайте функцию hello(), которая выводит приветствие пользователю. Создайте два объекта, содержащие поля firstname, lastname. Используя метод call и функцию hello() приветствуйте каждого из пользователей персонально.<br></li>
+	<li>Создайте объект counter с методами увеличения, уменьшения значения счетчика и методом возврата текущего значения. Используйте концепцию chaining для создания цепочки вызовов. <br><br>
+
+var current = counter.inc().inc()<br>.dec().inc().dec().getValue();<br>
+alert(current); // 1<br>
+</li>
+	<li>Создайте объект с данными: x, y и методами: getSum, getDiff, getMulti, getDiv. Методы объекта ничего не реализуют, а только выводят в alert сообщения вида ‘1 + 1 = 2’ или ‘1 / 0 = Infinity’. Для расчетов все методы используют функционал ранее созданного калькулятора.<br><br>
+
+alert(me.getSum(1, 1));<br>
+alert(me.getDiv(1, 0));
+</li>
+	<li>Придумайте алгоритм расчета суммы всех фактических параметров функции с использованием только рекурсии:<br><br>
+	
+console.log( sum(1, 2, 3, 4, 5) ); // 15<br>
+</li>
+	<li>Создайте объект со свойством delay и методами appendTo и appendText. Метод appendTo с помощью jQuery добавляет абзац в контейнер, переданный в параметре метода. Метод appendText может дописывает текст в добавленный элемент. Создайте массив строк и запустите цикл по этому массиву. С периодичностью, определенной в свойстве delay, в текст добавленного html-элемента добавляется соответствующий по порядку элемент массива. Учтите, что для доступа к вашему элементу не должен производиться поиск по DOM-дереву.<br><div id="textAdder"></div></li>
+	<li>Есть следующий код: <br> <br>	
+var country = { <br>
+    name: 'Ukraine', <br>
+    language: 'ukrainian', <br>
+    capital: { <br>
+        name: 'Kyiv', <br>
+        population: 2907817, <br>
+        area: 847.66 <br>
+    } <br>
+}; <br> <br>
+
+function format(start, end) { <br>
+    console.log(start +  <br>this.name + end); <br>
+} <br> <br>
+
+
+Допишите код, чтобы в консоли браузера появились строки, которые написаны в комментариях: <br> <br>
+
+
+format.call(/* Ваш код */); //  Ukraine <br>
+format.apply(/* Ваш код */); // [Ukraine] <br>
+format.call(/* Ваш код */); // Kyiv <br>
+format.apply(/* Ваш код */); // Kyiv <br>
+format.apply(/* Ваш код */); // undefined <br>
+</li>
+	<li>Создайте объект user с полем name. Создайте функцию format с параметрами start и end:<br><br>
+
+
+function format(start, end) {<br>
+    console.log(start +<br> this.name + end);<br>
+}<br><br>
+
+Привяжите функцию format() к объекту user таким образом, чтобы ее вызов возвращал отформатированное имя пользователя<br><br>
+
+
+userFormat('<<<', '>>>'); // <<<John>>><br><br>
+
+Реализуйте 2 версии текущего задания, используя:<br>
+1. Анонимную функцию;<br>
+2. Метод bind().<br>
+</li>
+	<li>Напишите функцию concat, которая соединяет две строки, разделенные каким-то символом: разделитель и строки передаются в параметрах функции. Используя карринг, создайте новую функцию hello, которая которая выводит приветствие тому, кто передан в ее параметре:<br>
+
+hello('World'); // Hello World<br>
+hello('John'); // Hello John<br>
+</li>
+</ol>
+	<script src="js/index.js"></script>
+</body>
+</html>	
